@@ -55,16 +55,14 @@ let infobt = `
 ▢ *${chats.length - groupsIn.length}* private chats
 ▢ *${chats.length}* Total Chats
 
-*≡ OWNER*
-  *GURU*
-▢ Instagram :
-  • https://instagram.com/asli_guru69
-▢ GitHub :
-  • https://github.com/Guru322
-▢ Telegram : 
-  • t.me/i_want_to_be_isekaied (GURU) 
-▢ YouTube : 
-  • https://youtube.com/@Asliguru
+*𒊮 OWNER*
+  * 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)*
+𒈞 Instagram :
+  • https://instagram.com/false_eye
+𒈞 GitHub :
+  • https://github.com/false-eye
+𒈞 Telegram : 
+  • t.me/false_eye
 
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
