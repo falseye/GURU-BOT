@@ -7,15 +7,15 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['917605902011', 'GURU', true],
-  ['6281255369012', 'Ash', true], 
-  [''] 
+  ['919539901834', ' 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)', true],
+  ['918590717599', '𝟗𝑖𝑛𝑒 𝑥𝟑', true], 
+  ['923114803966', '-blackrose✿' true] 
 ] //Number of owners
 
 //global.pairingNumber = "" //put your bot number here
 
-global.mods = ['917605902011','32460248586'] 
-global.prems = ['917605902011', '32460248586', '919398758484']
+global.mods = ['919539901834','923114803966','918590717599'] 
+global.prems = ['919539901834', '923114803966', '918590717599']
 global.allowed = ['917605902011', '32460248586', '19152999993']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
@@ -50,17 +50,17 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ'
+global.botname = '𝟗𝑖𝑛𝑒 𝑥𝟑'
 global.premium = 'true'
-global.packname = 'GURU┃ᴮᴼᵀ' 
-global.author = '@Asliguru' 
-global.menuvid = 'https://telegra.ph/file/085c4b1068f0f4f8db970.mp4'
-global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/asli_guru69\n' 
-global.dygp = 'https://chat.whatsapp.com/BibVE6tUICp3qOm2a1Ur8f'
-global.fgsc = 'https://github.com/Guru322/GURU-BOT' 
-global.fgyt = 'https://youtube.com/@Asliguru'
-global.fgpyp = 'https://youtube.com/@Asliguru'
-global.fglog = 'https://raw.githubusercontent.com/Guru322/api/Guru/guru.jpg' 
+global.packname = '𝟗𝑖𝑛𝑒 𝑥𝟑' 
+global.author = ' 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)' 
+global.menuvid = 'https://telegra.ph/file/ca015bad793bcde1cd232.mp4'
+global.igfg = '𒈞 Follow on Instagram\nhttps://www.instagram.com/false_eye\n' 
+global.dygp = 'https://t.me/sarca_stics'
+global.fgsc = 'https://github.com/false-eye' 
+global.fgyt = 'https://t.me/false_eye'
+global.fgpyp = 'https://wa.me/919539901834'
+global.fglog = 'https://telegra.ph/file/34aea4418dfc678fc96b6.jpg' 
 global.thumb = fs.readFileSync('./Assets/Gurulogo.jpg')
 
 
