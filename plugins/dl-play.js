@@ -67,7 +67,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
           mediaType: 2,
           mediaUrl: url,
           title: title,
-          body: 'HERE IS YOUR SONG',
+          body: '𝟗𝑖𝑛𝑒 𝑥𝟑  ×  𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒',
           sourceUrl: url,
           thumbnail: await (await conn.getFile(thumbnail)).data
         }
