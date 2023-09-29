@@ -15,11 +15,11 @@ import {
  
  const defaultMenu = {
   before: `
-  「 ${botname} あ⁩ 」\n
+  「 ${botname} ⛧ 」\n
   *%ucpn*
  
- 乂───『 *U S E R*』───乂
- ⛥ *Name:* %name
+ 𒊮───『 *U S E R*』───𒊮
+  ⛥ *Name:* %name
   ⛥ *Gold:* %credit
   ⛥ *Role:* %role
   ⛥ *Level:* %level [ %xp4levelup Xp For Levelup]
