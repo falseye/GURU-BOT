@@ -9,8 +9,8 @@ let name = await conn.getName(who)
 let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length
-let txt = `*乂  B O T  -  F E A T U R E*\n\n`
-      txt += `	◦  *Total* : ${totalf}\n`
+let txt = `*⛧  𝟗𝑖𝑛𝑒 𝑥𝟑 -  𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠*\n\n`
+      txt += `	◦  *𝑇𝑜𝑡𝑎𝑙* : ${totalf}\n`
       txt += author
    await conn.relayMessage(m.chat,  {
     requestPaymentMessage: {
