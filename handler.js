@@ -571,10 +571,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "𝟗𝑖𝑛𝑒 𝑥𝟑",
+                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
                         body: "welcome to Group",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://t.me/sarca_stics',
+                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -709,6 +709,41 @@ export async function groupsUpdate(groupsUpdate) {
 
         if (!text) continue
         await this.sendMessage(id, { text, mentions: this.parseMention(text) })
+    }
+}
+
+/**
+Delete Chat
+ */
+export async function deleteUpdate(message) {
+    try {
+        const {
+            fromMe,
+            id,
+            participant
+        } = message
+        if (fromMe)
+            return
+        let msg = this.serializeM(this.loadMessage(id))
+        if (!msg)
+            return
+        let chat = global.db.data.chats[msg.chat] || {}
+        if (chat.antiDelete)
+            return
+            await this.reply(msg.chat, `
+            ≡ deleted a message 
+            ┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
+            ▢ *Number :* @${participant.split`@`[0]} 
+            └─────────────
+            TO DEACTIVE , PRESS 
+            */off antidelete*
+            *.enable delete*
+            `.trim(), msg, {
+                        mentions: [participant]
+                    })
+        this.copyNForward(msg.chat, msg, false).catch(e => console.log(e, msg))
+    } catch (e) {
+        console.error(e)
     }
 }
 
