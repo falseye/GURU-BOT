@@ -1,5 +1,5 @@
-import ytdl from 'ytdl-core';
-import yts from 'yt-search';
+import ytdl from 'youtubedl-core';
+import yts from 'youtube-yts';
 import fs from 'fs';
 import { pipeline } from 'stream';
 import { promisify } from 'util';
@@ -67,7 +67,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
           mediaType: 2,
           mediaUrl: url,
           title: title,
-          body: '𝟗𝑖𝑛𝑒 𝑥𝟑  ×  𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒',
+          body: 'HERE IS YOUR SONG',
           sourceUrl: url,
           thumbnail: await (await conn.getFile(thumbnail)).data
         }
