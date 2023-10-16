@@ -147,6 +147,7 @@ export async function handler(chatUpdate) {
                 if (!("sWelcome" in chat)) chat.sWelcome = ""
                 if (!("useDocument" in chat)) chat.useDocument = false
                 if (!("viewOnce" in chat)) chat.viewOnce = false
+                if (!("viewStory" in chat)) chat.viewStory = false
                 if (!("welcome" in chat)) chat.welcome = false
                 if (!isNumber(chat.expired)) chat.expired = 0
             } else
@@ -168,6 +169,7 @@ export async function handler(chatUpdate) {
                     sWelcome: "",
                     useDocument: false,
                     viewOnce: false,
+                    viewStory: false,
                     welcome: false,
                 }
           
@@ -541,8 +543,8 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
-                  ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                  pp = 'https://telegra.ph/file/ac78d658c9254d5d3bde3.jpg'; // Assign default image URL
+                  ppgp = 'https://telegra.ph/file/b16095fbe064dc8b91147.jpg'; // Assign default image URL
                 } finally {
                   let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user')
                     .replace('@group', await this.getName(id))
@@ -559,7 +561,7 @@ export async function participantsUpdate({
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
+                    'https://telegra.ph/file/fe0de2c96ac075d247ace.jpg'
                   )}`;
           
                   try {
@@ -571,10 +573,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
-                        body: "welcome to Group",
+                        title: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
+                        body: "𝑊𝑒𝑙𝑐𝑜𝑚𝑒 𝑇𝑜 𝐺𝑟𝑜𝑢𝑝,𝑅𝑒𝑎𝑑 𝑅𝑢𝑙𝑒𝑠 𝐴𝑛𝑑 𝐸𝑛𝑗𝑜𝑦",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                        sourceUrl: 'https://t.me/sarca_stics',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -596,8 +598,8 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
-                  ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                  pp = 'https://telegra.ph/file/ac78d658c9254d5d3bde3.jpg'; // Assign default image URL
+                  ppgp = 'https://telegra.ph/file/b16095fbe064dc8b91147.jpg'; // Assign default image URL
                 } finally {
                   let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user')
                     .replace('@user', '@' + user.split('@')[0]);
@@ -612,7 +614,7 @@ export async function participantsUpdate({
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
+                    'https://telegra.ph/file/fe0de2c96ac075d247ace.jpg'
                   )}`;
           
                   try {
@@ -624,10 +626,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
-                        body: "Goodbye from  Group",
+                        title: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
+                        body: "𝐺𝑜𝑜𝑑𝑏𝑦𝑒 ",
                         thumbnailUrl: leaveApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                        sourceUrl: 'https://t.me/sarca_stics',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
