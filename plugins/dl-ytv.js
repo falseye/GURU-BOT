@@ -1,4 +1,4 @@
-import ytdl from 'ytdl-core';
+import ytdl from 'youtubedl-core';
 import fs from 'fs';
 import os from 'os';
 
@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
     }
 
     if (format.contentLength / (1024 * 1024) >= limit) {
-      return m.reply(`≡ *GURU YTDL*\n\n▢ *⚖️Size*: ${format.contentLength / (1024 * 1024).toFixed(2)}MB\n▢ *🎞️Quality*: ${format.qualityLabel}\n\n▢ The file exceeds the download limit *+${limit} MB*`);
+      return m.reply(`≡ * YTDL*\n\n▢ *⚖️Size*: ${format.contentLength / (1024 * 1024).toFixed(2)}MB\n▢ *🎞️Quality*: ${format.qualityLabel}\n\n▢ The file exceeds the download limit *+${limit} MB*`);
     }
 
     const tmpDir = os.tmpdir();
@@ -63,8 +63,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 
 handler.help = ['ytmp4 <yt-link>'];
 handler.tags = ['downloader'];
-handler.command = ['ytmp4', 'video'];
+handler.command = ['ytmp4', 'video', 'ytv'];
 handler.diamond = false;
 
 export default handler;
-
