@@ -561,7 +561,7 @@ export async function participantsUpdate({
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://telegra.ph/file/fe0de2c96ac075d247ace.jpg'
+                    'https://telegra.ph/file/252dad310b003431a1765.jpg'
                   )}`;
           
                   try {
@@ -573,8 +573,8 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
-                        body: "𝑊𝑒𝑙𝑐𝑜𝑚𝑒 𝑇𝑜 𝐺𝑟𝑜𝑢𝑝,𝑅𝑒𝑎𝑑 𝑅𝑢𝑙𝑒𝑠 𝐴𝑛𝑑 𝐸𝑛𝑗𝑜𝑦",
+                        title: "𝑊𝑒𝑙𝑐𝑜𝑚𝑒 𝑇𝑜 𝐺𝑟𝑜𝑢𝑝,𝑅𝑒𝑎𝑑 𝑅𝑢𝑙𝑒𝑠 𝐴𝑛𝑑 𝐸𝑛𝑗𝑜𝑦",
+                        body: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
                         thumbnailUrl: welcomeApiUrl,
                         sourceUrl: 'https://t.me/sarca_stics',
                         mediaType: 1,
@@ -614,7 +614,7 @@ export async function participantsUpdate({
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://telegra.ph/file/fe0de2c96ac075d247ace.jpg'
+                    'https://telegra.ph/file/9ae9163503ed0d6b0e01e.jpg'
                   )}`;
           
                   try {
@@ -626,8 +626,8 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
-                        body: "𝐺𝑜𝑜𝑑𝑏𝑦𝑒 ",
+                        title: "𝐺𝑜𝑜𝑑𝑏𝑦𝑒",
+                        body: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
                         thumbnailUrl: leaveApiUrl,
                         sourceUrl: 'https://t.me/sarca_stics',
                         mediaType: 1,
