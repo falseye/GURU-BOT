@@ -3,7 +3,9 @@ let handler = m => m
 handler.all = async function (m) {
 	let setting = global.db.data.settings[this.user.jid]
 	
-let _muptime
+  let bot = global.db.data.settings[this.user.jid] || {};
+  if (bot.autoBio) {
+    let _muptime
     if (process.send) {
       process.send('uptime')
       _muptime = await new Promise(resolve => {
@@ -12,10 +14,10 @@ let _muptime
       }) * 1000
     }
     let muptime = clockString(_muptime)
-		let bio = `\n𒈞 Alive Since ${muptime}\n\n ┃  ⛧  𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)`
+		let bio = `\n👁️ Time Active ${muptime}\n\n ┃ 🧃  By  𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)`
 		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
-
+  }
 }
 export default handler
 
